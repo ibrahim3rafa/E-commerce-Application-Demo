@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Here's a polished and professional `README.md` file for your Selenium test automation project:
 
 ---
@@ -85,3 +86,6 @@ This project demonstrates a Selenium-based automated test for an end-to-end user
 ---
 
 Would you like this saved as a `README.md` file so you can upload it directly to GitHub?
+=======
+
+>>>>>>> 1dadf5b9649b0d59d79ff68e6c0842ea38d4802a
