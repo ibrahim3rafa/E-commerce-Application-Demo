@@ -31,6 +31,11 @@ public class landingPage extends abstractComponent {
     WebElement submit;
 
 
+    @FindBy(css = "[class*='ng-star-inserted']")
+    WebElement incorrectMessage;
+//ng-tns-c4-12 toast-message ng-star-inserted
+
+
     public void getURL() {
         driver.get("https://rahulshettyacademy.com/client");
 
@@ -41,6 +46,11 @@ public class landingPage extends abstractComponent {
         password.sendKeys(userPass);
         submit.click();
         return new productCatalogue(driver);
+    }
+
+    public String getIncorrectMessage(){
+        waitWebElementsToAppear(incorrectMessage);
+        return incorrectMessage.getText();
     }
 
 }

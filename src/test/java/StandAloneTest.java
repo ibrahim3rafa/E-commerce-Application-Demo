@@ -1,16 +1,12 @@
 import org.junit.Assert;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 import pageObjects.cartPage;
-import pageObjects.landingPage;
 import pageObjects.placeOrderPage;
 import pageObjects.productCatalogue;
 import testComponents.baseTest;
 
 import java.io.IOException;
-import java.time.Duration;
 import java.util.List;
 
 public class StandAloneTest extends baseTest {

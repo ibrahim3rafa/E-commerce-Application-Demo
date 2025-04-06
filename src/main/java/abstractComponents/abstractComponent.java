@@ -2,6 +2,8 @@ package abstractComponents;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import pageObjects.landingPage;
@@ -18,7 +20,6 @@ public class abstractComponent {
 
 
 
-
     public void waitElementsToAppear(By findBy){
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         wait.until(ExpectedConditions.visibilityOfElementLocated(findBy));
@@ -31,4 +32,8 @@ public class abstractComponent {
 //        wait.until(ExpectedConditions.invisibilityOfElementLocated(findBy));
     }
 
+    public void waitWebElementsToAppear(WebElement ele){
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        wait.until(ExpectedConditions.visibilityOf(ele));
+    }
 }
