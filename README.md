@@ -38,22 +38,6 @@ This project demonstrates a Selenium-based automated test for an end-to-end user
 - Selenium WebDriver
 - TestNG or JUnit (optional for future enhancements)
 
-### Setup
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/selenium-ecommerce-automation.git
-   cd selenium-ecommerce-automation
-   ```
-
-2. Install dependencies (via Maven or manually include Selenium JARs).
-
-3. Run the test:
-   ```bash
-   javac StandAloneTest.java
-   java StandAloneTest
-   ```
-
 ## 📦 Technologies Used
 
 - Java
