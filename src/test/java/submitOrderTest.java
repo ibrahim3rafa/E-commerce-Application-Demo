@@ -9,7 +9,7 @@ import testComponents.baseTest;
 import java.io.IOException;
 import java.util.List;
 
-public class StandAloneTest extends baseTest {
+public class submitOrderTest extends baseTest {
 
 
     @Test
