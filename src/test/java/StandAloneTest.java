@@ -13,7 +13,7 @@ public class StandAloneTest extends baseTest {
 
 
     @Test
-    public void submitOrder() throws InterruptedException ,IOException {
+    public void submitOrder() throws InterruptedException, IOException {
         String productName = "IPHONE 13 PRO";
 //         landingPage lp = launchApplication();
         productCatalogue pC = lp.userLogin("ibrahimarafa611@gmail.com", "@I3rafa304852");

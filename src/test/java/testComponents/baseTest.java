@@ -11,9 +11,9 @@ import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
 
-public class baseTest  {
+public class baseTest {
     public WebDriver driver;
-     public  landingPage lp ;
+    public landingPage lp;
 
 
     public WebDriver initializeDriver() throws IOException {
@@ -41,8 +41,8 @@ public class baseTest  {
     public void launchApplication() throws IOException {
 
         driver = initializeDriver();
-        if(driver != null) {
-            lp = new landingPage(driver) ;
+        if (driver != null) {
+            lp = new landingPage(driver);
             lp.getURL();
         }
 
@@ -50,7 +50,7 @@ public class baseTest  {
 
 
     @AfterMethod(alwaysRun = true)
-    public void tearDown(){
+    public void tearDown() {
         driver.close();
     }
 

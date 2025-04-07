@@ -14,6 +14,7 @@ public class landingPage extends abstractComponent {
     WebDriver driver;
 
     WebDriverWait wait;
+
     public landingPage(WebDriver driver) {
         super(driver);
         this.driver = driver;
@@ -48,7 +49,7 @@ public class landingPage extends abstractComponent {
         return new productCatalogue(driver);
     }
 
-    public String getIncorrectMessage(){
+    public String getIncorrectMessage() {
         waitWebElementsToAppear(incorrectMessage);
         return incorrectMessage.getText();
     }

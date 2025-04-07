@@ -1,8 +1,7 @@
-
-
 # 🧪 Selenium Automation - E-Commerce Checkout Test
 
-This project demonstrates a Selenium-based automated test for an end-to-end user journey on an e-commerce web application. It covers login, product selection, cart validation, and completing an order.
+This project demonstrates a Selenium-based automated test for an end-to-end user journey on an e-commerce web
+application. It covers login, product selection, cart validation, and completing an order.
 
 ## 📌 Project Structure
 

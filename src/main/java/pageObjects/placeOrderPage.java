@@ -12,49 +12,48 @@ import java.util.List;
 public class placeOrderPage extends abstractComponent {
 
     WebDriver driver;
+
     public placeOrderPage(WebDriver driver) {
         super(driver);
         this.driver = driver;
-        PageFactory.initElements(driver,this);
+        PageFactory.initElements(driver, this);
     }
 
     String inputText = "eg";
     String optionToSelected = "Egypt";
     //input field
-    @FindBy(css="input[placeholder='Select Country']")
+    @FindBy(css = "input[placeholder='Select Country']")
     WebElement inputField;
 
 
     //suggestedCountries
-    @FindBy(css=".ta-results.list-group.ng-star-inserted")
+    @FindBy(css = ".ta-results.list-group.ng-star-inserted")
     WebElement suggestedCountries;
 
-   By suggestedCountriesBy =By.cssSelector(".ta-results.list-group.ng-star-inserted");
+    By suggestedCountriesBy = By.cssSelector(".ta-results.list-group.ng-star-inserted");
 
 
-   //suggestedCountryList
-   @FindBy(css=".ta-results.list-group.ng-star-inserted button")
-   List<WebElement> suggestedCountryList;
+    //suggestedCountryList
+    @FindBy(css = ".ta-results.list-group.ng-star-inserted button")
+    List<WebElement> suggestedCountryList;
 
 
+    //submit order
+    @FindBy(css = ".action__submit")
+    WebElement submitOrder;
 
-   //submit order
-   @FindBy(css=".action__submit")
-   WebElement submitOrder;
 
-
-   //order placed
-   @FindBy(css=".toast-success")
-   WebElement orderPlaced;
+    //order placed
+    @FindBy(css = ".toast-success")
+    WebElement orderPlaced;
 
     //confirm
-    @FindBy(css=".hero-primary")
+    @FindBy(css = ".hero-primary")
     WebElement confirmText;
 
 
-
     //method to select country
-    public void selectionFromSuggestiveDropdown(){
+    public void selectionFromSuggestiveDropdown() {
         inputField.sendKeys(inputText);
         waitElementsToAppear(suggestedCountriesBy);
         for (WebElement suggestion : suggestedCountryList) {
@@ -68,15 +67,13 @@ public class placeOrderPage extends abstractComponent {
 
 
     //method to submit order
-    public void submitOrder(){
+    public void submitOrder() {
         submitOrder.click();
     }
 
 
-
     //method of confirmation
-    public String confirmationMessages()
-    {
+    public String confirmationMessages() {
         System.out.println(orderPlaced.getText());
         System.out.println(confirmText.getText());
         return confirmText.getText();
