@@ -6,7 +6,7 @@ application. It covers login, product selection, cart validation, and completing
 ## 📌 Project Structure
 
 ```
-├── StandAloneTest.java            # Entry point to run the full test
+├── tests.StandAloneTest.java            # Entry point to run the full test
 ├── abstractComponent.java         # Reusable component for waiting utilities
 └── pageObjects/                   # Page Object Model (POM) classes
     ├── landingPage.java           # Handles login and page navigation
