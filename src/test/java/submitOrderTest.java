@@ -4,6 +4,7 @@ import org.testng.annotations.Test;
 import pageObjects.cartPage;
 import pageObjects.placeOrderPage;
 import pageObjects.productCatalogue;
+import pageObjects.submitPage;
 import testComponents.baseTest;
 
 import java.io.IOException;
@@ -21,7 +22,7 @@ public class submitOrderTest extends baseTest {
         List<WebElement> productButtons = pC.getAddToCartButton();
         cartPage cartP = pC.addToCart(products, productButtons, productName);
         Assert.assertTrue(cartP.isItemInCart(productName));
-        placeOrderPage placeOrder = cartP.completeCheckout();
+        submitPage placeOrder = cartP.completeCheckout();
         placeOrder.selectionFromSuggestiveDropdown();
         placeOrder.submitOrder();
         Assert.assertEquals("thankyou for the order.", placeOrder.confirmationMessages().toLowerCase());
