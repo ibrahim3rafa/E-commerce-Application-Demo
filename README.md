@@ -81,8 +81,9 @@ Update globalData.properties with your browser preferences:
 
 browser=chrome
 
-```bash
+
 ## Test Data
+```bash
 [
 {
 "mail": "your-email@example.com",
