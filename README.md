@@ -72,7 +72,7 @@ e-commerce-test-framework/
 1. Clone the repository:
    ```bash
    git clone https://github.com/ibrahim3rafa/E-commerce-Application-Demo.git
-
+   
 
 ## Configuration
 Update globalData.properties with your browser preferences:
@@ -81,6 +81,7 @@ Update globalData.properties with your browser preferences:
 
 browser=chrome
 
+```bash
 ## Test Data
 [
 {
@@ -89,7 +90,7 @@ browser=chrome
 "productName": "PRODUCT_NAME"
 }
 ]
-
+```
 
 
 ## Test Cases
