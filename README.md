@@ -22,29 +22,30 @@ A robust test automation framework for e-commerce applications using Selenium We
 ## e-commerce-test-framework/
 # Framework Structure
 
+```bash
 e-commerce-test-framework/
 ├── src/
 │   ├── main/
 │   │   └── java/
 │   │       ├── abstractComponents/
-│   │       │   └── abstractComponent.java
+│   │       │   └── AbstractComponent.java
 │   │       ├── pageObjects/
-│   │       │   ├── cartPage.java
-│   │       │   ├── landingPage.java
-│   │       │   ├── orderPage.java
-│   │       │   ├── placeOrderPage.java
-│   │       │   ├── productCatalogue.java
-│   │       │   └── submitPage.java
+│   │       │   ├── CartPage.java
+│   │       │   ├── LandingPage.java
+│   │       │   ├── OrderPage.java
+│   │       │   ├── PlaceOrderPage.java
+│   │       │   ├── ProductCatalogue.java
+│   │       │   └── SubmitPage.java
 │   │       └── testComponents/
-│   │           └── baseTest.java
+│   │           └── BaseTest.java
 │   └── test/
 │       ├── java/
 │       │   ├── testData/
-│       │   │   └── dataReader.java
+│       │   │   └── DataReader.java
 │       │   └── tests/
-│       │       ├── errorValidationsTest.java
+│       │       ├── ErrorValidationsTest.java
 │       │       ├── StandAloneTest.java
-│       │       └── submitOrderTest.java
+│       │       └── SubmitOrderTest.java
 │       └── resources/
 │           ├── testData/
 │           │   └── purchaseOrder.json
@@ -53,23 +54,18 @@ e-commerce-test-framework/
 │               ├── errorHandling.xml
 │               ├── purchcase.xml
 │               └── testng.xml
-└── pom.xml
+├── target/
+├── pom.xml
+└── README.md
+```
 
 ## Prerequisites
 
-- Java JDK 8+
-- Maven 3.6.3+
-- Chrome/Firefox browser
-- Selenium WebDriver 4.0.0+
-- TestNG 7.4.0+
-
-
-## Prerequisites
-
-- Java JDK 8+
-- Maven
-- Chrome/Firefox browser
-- Selenium WebDriver
+- ☕ **Java JDK 8+**
+- 🧰 **Maven 3.6.3+**
+- 🌐 **Chrome/Firefox** (latest version)
+- ⚙️ **Selenium WebDriver 4.0.0+**
+- 🧪 **TestNG 7.4.
 
 ## Installation
 
