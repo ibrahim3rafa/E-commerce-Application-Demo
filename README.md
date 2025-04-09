@@ -17,9 +17,7 @@ A robust test automation framework for e-commerce applications using Selenium We
 - **Grouping Tests** for selective execution
 - **Dependent Tests** for order verification
 
-## Framework Structure
 
-## e-commerce-test-framework/
 # Framework Structure
 
 ```bash
