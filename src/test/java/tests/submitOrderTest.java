@@ -67,7 +67,7 @@ public class submitOrderTest extends baseTest {
     @DataProvider
     public Object[][] getData() throws IOException {
 
-        List<HashMap<String, String>> data = getJsonDataToMap(new File(System.getProperty("user.dir")+"//src//test//java//testData//purchaseOrder.json"), StandardCharsets.UTF_8);
+        List<HashMap<String, String>> data = getJsonDataToMap(new File(System.getProperty("user.dir")+"//src//test//java//testData//purchaseOrder.json"));
 
         return new Object[][] {{data.get(0)},{data.get(1)}};
     }
