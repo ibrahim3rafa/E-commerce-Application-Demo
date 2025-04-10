@@ -77,7 +77,7 @@ public class baseTest {
     }
 
 
-    public String takeScreenShot(String tcName) throws IOException {
+    public String takeScreenShot(String tcName ,WebDriver driver) throws IOException {
         TakesScreenshot screenshot = (TakesScreenshot) driver ;
         File sourceFile =screenshot.getScreenshotAs(OutputType.FILE);
         File desfile = new File(System.getProperty("user.dir")+"//src//test//java//testData//"+tcName+".png");

@@ -4,8 +4,8 @@ import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 import pageObjects.cartPage;
-import pageObjects.submitPage;
 import pageObjects.productCatalogue;
+import pageObjects.submitPage;
 import testComponents.baseTest;
 
 import java.io.IOException;

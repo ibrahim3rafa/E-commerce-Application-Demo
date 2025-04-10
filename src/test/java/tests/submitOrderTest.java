@@ -6,13 +6,12 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import pageObjects.cartPage;
 import pageObjects.orderPage;
-import pageObjects.submitPage;
 import pageObjects.productCatalogue;
+import pageObjects.submitPage;
 import testComponents.baseTest;
 
 import java.io.File;
 import java.io.IOException;
-import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.List;
 
