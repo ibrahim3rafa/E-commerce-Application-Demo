@@ -20,7 +20,7 @@ public class errorValidationsTest extends baseTest {
 
 
       lp.userLogin("ibrahiarafa611@gmail.com", "@I3rafa304852");
-        Assert.assertEquals(lp.getIncorrectMessage(), "Incorrect email password.");
+        Assert.assertEquals(lp.getIncorrectMessage(), "Incorrect email or password.");
         System.out.println(lp.getIncorrectMessage());
     }
 
