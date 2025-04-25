@@ -4,8 +4,9 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.junit.Assert;
+
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 import pageObjects.cartPage;
 import pageObjects.productCatalogue;
 import pageObjects.submitPage;
@@ -26,7 +27,7 @@ public class stepDefinationImplementations extends baseTest {
     }
 
 
-    @Given("^I loggen with (.+) and (.+)$")
+    @Given("^I login with (.+) and (.+)$")
     public void I_login_with_userName_PASS(String userName, String Password) {
         pC = lp.userLogin(userName, Password);
     }
@@ -55,4 +56,10 @@ public class stepDefinationImplementations extends baseTest {
         driver.close();
     }
 
+
+    @Then("Verify {string} error message appears")
+    public void Verify_Failing_Message(String string) {
+        Assert.assertEquals(lp.getIncorrectMessage(), string);
+        driver.close();
+    }
 }
