@@ -24,7 +24,7 @@ public class submitOrderTest extends baseTest {
     public void submitOrder(HashMap<String,String> input ) throws InterruptedException, IOException {
 
         this.productName = input.get("productName");
-//         landingPage lp = launchApplication();
+//     landingPage lp = launchApplication();
         productCatalogue pC = lp.userLogin(input.get("mail"), input.get("pass"));
         List<WebElement> products = pC.getProducts();
         List<WebElement> productButtons = pC.getAddToCartButton();
