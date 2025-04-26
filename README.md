@@ -6,7 +6,7 @@
 
 A robust test automation framework for e-commerce applications using Selenium WebDriver, TestNG, and Java with Page Object Model design pattern.
 
-Demo Video : https://github.com/user-attachments/assets/accfcb3d-1656-4efd-b60b-eff66184e006
+Demo Video : https://github.com/user-attachments/assets/8377ff68-bf59-4cff-8cfc-79d4f41d6004
 
 ## Features
 
